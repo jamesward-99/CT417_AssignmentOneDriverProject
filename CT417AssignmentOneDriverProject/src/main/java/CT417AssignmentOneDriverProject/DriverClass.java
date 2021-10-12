@@ -3,8 +3,8 @@ package CT417AssignmentOneDriverProject;
 public class DriverClass {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		//Student student = new Student("James",22 , "06/08/1999", 18394566);
+		System.out.println("Hi");
 	}
 
 }
