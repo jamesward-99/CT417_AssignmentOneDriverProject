@@ -9,13 +9,17 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    //////
+    apply plugin: 'maven'
+    group = 'com.github.jamesward-99'
+    /////
 }
 
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
-    
+    google()
     maven { url 'https://jitpack.io' }
 }
 
@@ -31,6 +35,9 @@ dependencies {
     
     // https://mvnrepository.com/artifact/org.terasoluna.gfw/terasoluna-gfw-jodatime
 	implementation 'org.terasoluna.gfw:terasoluna-gfw-jodatime:5.7.0.RELEASE'
+	
+	// To enable building on JitPack you need to add the android-maven plugin
+	classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
 	
 	// Jitpack adding CT417_AssignmentOne as a dependency
 	// implementation 'com.github.jamesward-99:CT417_AssignmentOne:v1.0'
